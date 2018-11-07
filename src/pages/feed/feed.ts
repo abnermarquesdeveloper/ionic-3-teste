@@ -14,8 +14,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'feed.html',
 })
 export class FeedPage {
-  public nome_usuario:string = "Abner Lisboa Marques";
-  public data_nasc:string = "06/12/1983";
+
+  public objeto_feed = {
+    titulo: "Abner Lisboa Marques",
+    data: "06/12/1983",
+    descricao: "Meu primeiro APP Híbrido!!!",
+    qtd_likes: 12,
+    qtd_comments: 10,
+    time_comment: "Now"
+  }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
